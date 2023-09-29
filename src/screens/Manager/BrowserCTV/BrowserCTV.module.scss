@@ -1,0 +1,13 @@
+.browser {
+  &__des {
+    display: flex;
+    justify-content: space-between;
+    sup {
+      top: -1em;
+      left: -0.3em;
+      font-size: 100%;
+      color: red;
+      font-weight: 600;
+    }
+  }
+}

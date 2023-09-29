@@ -1,0 +1,25 @@
+.availableContract {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &__button {
+    width: 15%;
+    margin-left: auto;
+  }
+  @media (max-width: 1180px) {
+    &__button {
+      width: 20%;
+    }
+  }
+  @media (max-width: 767px) {
+    &__button {
+      width: 40%;
+    }
+    &__item {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

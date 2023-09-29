@@ -1,0 +1,39 @@
+.detail {
+  &__des {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 49%;
+    td,
+    th {
+      border-top: none;
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+  &__btn {
+    display: flex;
+    button {
+      margin-left: auto;
+      width: 20%;
+    }
+  }
+  @media (max-width: 767px) {
+    &__des {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+    }
+    th {
+      width: 45%;
+    }
+    td {
+      width: 55%;
+    }
+    &__btn button {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.header {
+  padding: 5px;
+  background: #243954;
+  display: flex;
+  justify-content: space-between;
+  &__user {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 95%;
+    margin: 0 auto;
+    img {
+      width: 25px;
+      height: auto;
+      margin: 0 5px;
+    }
+  }
+  p {
+    margin-bottom: 0;
+    color: #ddd;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+  &__des {
+    font-size: 19px;
+    font-weight: 600;
+    img {
+      display: none;
+    }
+  }
+  &__click {
+    font-size: 19px;
+    font-weight: 600;
+    img {
+      display: none;
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 5px 27px;
+    &__user {
+      width: 100%;
+    }
+    &__des {
+      z-index: 6;
+      position: absolute;
+      img {
+        display: block;
+      }
+    }
+    &__click {
+      display: none;
+    }
+  }
+  @media (max-width: 428px) {
+    padding: 5px 15px;
+  }
+}

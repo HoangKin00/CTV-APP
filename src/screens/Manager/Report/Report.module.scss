@@ -1,0 +1,8 @@
+.report {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media (max-width: 767px) {
+    gap: 15px;
+  }
+}

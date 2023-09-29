@@ -1,0 +1,26 @@
+.reportCtv {
+  &__content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 48%;
+    margin-bottom: 20px;
+    h4 {
+      margin: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    &__item {
+      width: 100%;
+    }
+    &__des {
+      gap: 10px;
+    }
+    &__btn {
+      width: 30%;
+    }
+  }
+}

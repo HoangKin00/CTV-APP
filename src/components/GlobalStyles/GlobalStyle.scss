@@ -1,0 +1,197 @@
+@import url("https://huudinh.github.io/assets/sass/lib.min.css");
+
+.form {
+  margin: 10vh auto;
+  max-width: 380px;
+  width: 100%;
+  &Title {
+    margin: 20px 0;
+    font-size: 28px;
+  }
+
+  &Link {
+    padding: 12px;
+    font-size: 14px;
+    font-style: italic;
+    cursor: pointer;
+    text-align: center;
+  }
+  &Logo {
+    width: 100%;
+    img {
+      width: 55%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 767px) {
+    margin: 5vh auto;
+    width: 90%;
+    &Title {
+      font-size: 24px;
+    }
+  }
+  a {
+    color: blue;
+  }
+}
+select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #f6f6f6;
+  border: none;
+  border-radius: 5px;
+}
+.filter {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.select {
+  width: 23%;
+  select {
+    border: solid 1px #ccc;
+  }
+}
+.date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  b {
+    font-style: italic;
+    color: #000;
+  }
+  input {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #888;
+    width: 15%;
+  }
+  button {
+    background: #0088ff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: #fff;
+  }
+}
+table {
+  width: 100%;
+  th {
+    padding: 10px;
+    text-align: center !important;
+  }
+  td {
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+  }
+}
+.box {
+  border: 1px solid #dee2e6;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  padding: 30px;
+  border-radius: 6px;
+}
+.arrow {
+  a {
+    color: #888888;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #c99128;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1180px) {
+  .select {
+    width: 30%;
+  }
+  table {
+    font-size: 14px;
+  }
+  .date {
+    input {
+      width: 20%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .filter {
+    padding-bottom: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .select {
+    width: 40%;
+    select {
+      padding: 5px 15px;
+      font-size: 15px;
+    }
+  }
+  .box {
+    padding: 15px;
+    overflow-x: auto;
+  }
+  .date {
+    input {
+      width: 25%;
+    }
+  }
+  .table-bordered {
+    width: 750px;
+  }
+  .table-cover {
+    width: 750px;
+  }
+}
+@media (max-width: 375px) {
+  .select {
+    width: 49%;
+  }
+  .date {
+    input {
+      width: 35%;
+    }
+    button {
+      margin: 15px 0px;
+      padding: 7px 7px;
+    }
+    b {
+      display: none;
+    }
+  }
+}
+@media (max-width: 280px) {
+  .date {
+    text-align: left;
+    flex-direction: column;
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      margin: 0 0px 15px;
+    }
+  }
+  .select {
+    width: 100%;
+  }
+}

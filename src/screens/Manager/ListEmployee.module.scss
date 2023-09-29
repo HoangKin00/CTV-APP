@@ -1,0 +1,32 @@
+.listEmp {
+  &__des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    margin-bottom: 15px;
+    a {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      sup {
+        top: -1em;
+        left: -0.3em;
+        font-size: 100%;
+        color: red;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &__des {
+      flex-direction: column-reverse;
+      align-items: baseline;
+      margin-top: 8px;
+    }
+    &__button {
+      margin-bottom: 5px;
+    }
+  }
+}
