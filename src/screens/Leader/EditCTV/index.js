@@ -13,8 +13,8 @@ const EditCTV = () => {
           Quay lại
         </Link>
       </div>
-      <div className="title">Sửa thông tin CTV</div>
       <div className="box">
+        <div className="title">Sửa thông tin CTV</div>
         <div className={editCtvStyles["edit__des"]}>
           <div className={editCtvStyles["edit__item"]}>
             <table className="table">

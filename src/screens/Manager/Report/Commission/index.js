@@ -131,8 +131,10 @@ class ReportCommission extends Component {
     return (
       <div>
         <Pie options={options} data={pieChartData} />
-        <button onClick={this.change1}>1 tháng trước</button>
-        <button onClick={this.change2}>3 tháng trước</button>
+        <div className="clickBtn">
+          <button onClick={this.change1}>1 tháng trước</button>
+          <button onClick={this.change2}>3 tháng trước</button>
+        </div>
       </div>
     );
   }

@@ -8,8 +8,8 @@ import commiStyles from "./CommissionReport.module.scss";
 const CommissionReport = () => {
   return (
     <div className={commiStyles["commissionReport"]}>
-      <div className="title">Báo cáo hoa hồng dịch vụ</div>
       <div className="box">
+        <div className="title">Báo cáo hoa hồng dịch vụ</div>
         <div className="filter">
           <Search type="search" placeholder="Tìm kiếm" />
           <div className={commiStyles["commissionReport__date"]}>

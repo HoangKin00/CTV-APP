@@ -15,9 +15,12 @@
 }
 button {
   border: none;
-  background: #1d80b6;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 15px 5px;
+  background: #1d6894;
+  transition: all 0.2s linear;
+  padding: 5px 13px;
   border-radius: 5px;
+  color: #fff;
+  &:hover {
+    background-color: #c89128;
+  }
 }

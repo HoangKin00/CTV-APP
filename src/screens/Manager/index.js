@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Search from "../../components/Input/Search";
-import { PUBLIC_URL } from "../../utils/const";
 import listEmpStyles from "./ListEmployee.module.scss";
 
 const ListEmployee = () => {
@@ -9,14 +7,7 @@ const ListEmployee = () => {
     <div className={listEmpStyles["listEmp"]}>
       <div className={listEmpStyles["listEmp__des"]}>
         <div className="title">Danh sách CTV</div>
-        <div className={listEmpStyles["listEmp__button"]}>
-          <Link to={"/duyet-ctv"}>
-            <span>
-              <img src={`${PUBLIC_URL}/icons/noti.svg`} alt="" /> <sup>5</sup>
-            </span>
-            Duyệt CTV
-          </Link>
-        </div>
+        <div className={listEmpStyles["listEmp__button"]}></div>
       </div>
       <div className="box">
         <div className="filter">

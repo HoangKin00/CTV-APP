@@ -12,13 +12,8 @@ const BrowserCTV = () => {
           Quay lại
         </Link>
       </div>
-      <div className={browserStyles["browser__des"]}>
-        <div className="title">Danh sách đăng kí CTV</div>
-        <span>
-          <img src={`${PUBLIC_URL}/icons/noti.svg`} alt="" /> <sup>5</sup>
-        </span>
-      </div>
       <div className="box">
+        <div className="title">Duyệt CTV</div>
         <div className={browserStyles["browser__detail"]}>
           <table className="table table-bordered">
             <tbody>

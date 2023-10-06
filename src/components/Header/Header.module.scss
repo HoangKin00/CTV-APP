@@ -1,14 +1,17 @@
 .header {
-  padding: 5px;
-  background: #243954;
+  padding: 5px 20px;
+  background: #1d6894;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 30px;
+  margin: 15px 20px 0;
+  text-align: right;
+  gap: 30px;
   &__user {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 95%;
-    margin: 0 auto;
     img {
       width: 25px;
       height: auto;
@@ -17,7 +20,7 @@
   }
   p {
     margin-bottom: 0;
-    color: #ddd;
+    color: #fff;
   }
   &__icon {
     display: flex;
@@ -37,10 +40,28 @@
       display: none;
     }
   }
+  &__report {
+    line-height: 0;
+    img {
+      width: 18px;
+      height: auto;
+      display: block;
+    }
+    sup {
+      top: -1.2em;
+      left: 0.5em;
+      font-size: 100%;
+      color: red;
+      font-weight: 600;
+    }
+  }
+
   @media (max-width: 1200px) {
-    padding: 5px 27px;
-    &__user {
-      width: 100%;
+    padding: 5px 15px;
+    margin: 0;
+    gap: 15px;
+    &__user p {
+      display: none;
     }
     &__des {
       z-index: 6;
@@ -53,7 +74,7 @@
       display: none;
     }
   }
-  @media (max-width: 428px) {
-    padding: 5px 15px;
+  @media (max-width: 767px) {
+    margin: 0;
   }
 }

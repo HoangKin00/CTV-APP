@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Side from "../components/Sidebar/Side";
 import homeStyles from "./Home.module.scss";
+import { role } from "../routes/route";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
 
       <div className={homeStyles["home__box"]}>
         <div className={homeStyles["home__header"]}>
-          <Header />
+          <Header role={role} />
         </div>
         <div className={homeStyles["home__main"]}>
           <Outlet />

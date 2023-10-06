@@ -17,7 +17,7 @@ const ReportActivityRevenue = () => {
             </tr>
           </tbody>
         </table>
-        <div>
+        <div className="clickBtn">
           <button>3 ngày</button>
           <button>7 ngày</button>
         </div>

@@ -45,7 +45,7 @@ const Register = (props) => {
           <option value="Khách hàng cũ">Khách hàng cũ</option>
           <option value="click theo Link">click theo Link</option>
         </select>
-        <Button info>Đăng ký</Button>
+        <Button primary>Đăng ký</Button>
         <p class="formLink">
           Bạn đã có tài khoản?<Link to="/dang-nhap"> Đăng nhập</Link>
         </p>

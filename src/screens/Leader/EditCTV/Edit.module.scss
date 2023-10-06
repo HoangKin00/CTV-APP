@@ -10,11 +10,16 @@
     th {
       border-top: none;
       border-bottom: 1px solid #dee2e6;
+      text-align: left !important;
+    }
+    select {
+      width: 60%;
+      padding: 5px;
+      background: #e5e5e5;
     }
   }
   &__btn {
-    margin-left: auto;
-    width: 20%;
+    text-align: right;
   }
   @media (max-width: 767px) {
     &__des {

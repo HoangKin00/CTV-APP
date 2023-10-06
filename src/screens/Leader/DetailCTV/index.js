@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../../components/Button";
+import { PUBLIC_URL } from "../../../utils/const";
 import detailCtvStyles from "./Detail.module.scss";
 
 const DetailCTV = () => {
   return (
     <div className={detailCtvStyles["detail"]}>
-      <div className="title">Thông tin chi tiết</div>
+      <div className="arrow">
+        <Link to={"/danh-sach-ctv"}>
+          <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt="" />
+          Quay lại
+        </Link>
+      </div>
       <div className="box">
+        <div className="title">Thông tin chi tiết</div>
         <div className={detailCtvStyles["detail__des"]}>
           <div className={detailCtvStyles["detail__item"]}>
             <table className="table">

@@ -7,10 +7,13 @@ import listKhStyles from "./List.module.scss";
 const ListCustomer = () => {
   return (
     <div className={listKhStyles["list"]}>
-      <div className={listKhStyles["list__button"]}>
-        <Link to={"/them-moi-kh"}>
-          Thêm mới khách hàng <span>+</span>
-        </Link>
+      <div className={listKhStyles["list__title"]}>
+        <div className="title">Danh sách khách hàng</div>
+        <div className={listKhStyles["list__button"]}>
+          <Link to={"/them-moi-kh"}>
+            Thêm mới khách hàng <span>+</span>
+          </Link>
+        </div>
       </div>
       <div className="box">
         <div className="filter">

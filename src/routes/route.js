@@ -1,52 +1,52 @@
 import { PUBLIC_URL } from "../utils/const";
-const role = "";
+export const role = "GIAM_DOC";
 export const menu =
-  role === "ADMIN"
+  role === "GIAM_DOC"
     ? [
-        // menu của Admin
+        // menu của giám đốc
         {
-          name: "Danh sách tài khoản",
+          name: "Danh sách CTV",
           icon: `${PUBLIC_URL}/icons/list.svg`,
-          link: "/danh-sach-tai-khoan",
+          link: "/danh-sach-nhan-vien",
           dropdown: []
         },
         {
-          name: "Thêm mới tài khoản",
-          icon: `${PUBLIC_URL}/icons/add-user.svg`,
-          link: "/them-moi-tai-khoan",
+          name: "Duyệt CTV",
+          icon: `${PUBLIC_URL}/icons/notii.svg`,
+          link: "/duyet-ctv",
+          dropdown: []
+        },
+        {
+          name: "Hợp đồng sẵn",
+          icon: `${PUBLIC_URL}/icons/contract.svg`,
+          link: "/hop-dong-san",
+          dropdown: []
+        },
+        {
+          name: "Báo cáo",
+          icon: `${PUBLIC_URL}/icons/report.svg`,
+          link: "/bao-cao",
+          dropdown: []
+        },
+        {
+          name: "Phân tích số liệu",
+          icon: `${PUBLIC_URL}/icons/data.svg`,
+          link: "/phan-tich-so-lieu",
           dropdown: []
         }
       ]
     : // [
-      //     // menu của giám đốc
+      //     // menu của Admin
       //     {
-      //       name: "Danh sách CTV",
+      //       name: "Danh sách tài khoản",
       //       icon: `${PUBLIC_URL}/icons/list.svg`,
-      //       link: "/danh-sach-nhan-vien",
+      //       link: "/danh-sach-tai-khoan",
       //       dropdown: []
       //     },
       //     {
-      //       name: "Duyệt CTV",
-      //       icon: `${PUBLIC_URL}/icons/notii.svg`,
-      //       link: "/duyet-ctv",
-      //       dropdown: []
-      //     },
-      //     {
-      //       name: "Hợp đồng sẵn",
-      //       icon: `${PUBLIC_URL}/icons/contract.svg`,
-      //       link: "/hop-dong-san",
-      //       dropdown: []
-      //     },
-      //     {
-      //       name: "Báo cáo",
-      //       icon: `${PUBLIC_URL}/icons/report.svg`,
-      //       link: "/bao-cao",
-      //       dropdown: []
-      //     },
-      //     {
-      //       name: "Phân tích số liệu",
-      //       icon: `${PUBLIC_URL}/icons/data.svg`,
-      //       link: "/phan-tich-so-lieu",
+      //       name: "Thêm mới tài khoản",
+      //       icon: `${PUBLIC_URL}/icons/add-user.svg`,
+      //       link: "/them-moi-tai-khoan",
       //       dropdown: []
       //     }
       //   ];

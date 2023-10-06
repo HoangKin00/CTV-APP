@@ -139,8 +139,10 @@ class CustomerData extends Component {
     return (
       <div>
         <Pie options={options} data={pieChartData} />
-        <button onClick={this.change1}>1 tuần trước</button>
-        <button onClick={this.change2}>1 tháng trước</button>
+        <div className="clickBtn">
+          <button onClick={this.change1}>1 tuần trước</button>
+          <button onClick={this.change2}>1 tháng trước</button>
+        </div>
       </div>
     );
   }

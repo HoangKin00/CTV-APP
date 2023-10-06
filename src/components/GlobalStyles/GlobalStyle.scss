@@ -38,7 +38,7 @@
 }
 select {
   width: 100%;
-  padding: 10px 15px;
+  padding: 7px 15px;
   font-size: 16px;
   background: #f6f6f6;
   border: none;
@@ -51,7 +51,7 @@ select {
   gap: 20px;
 }
 .select {
-  width: 23%;
+  width: 22%;
   select {
     border: solid 1px #ccc;
   }
@@ -72,7 +72,7 @@ select {
     width: 15%;
   }
   button {
-    background: #0088ff;
+    background: #1d6894;
     border: none;
     border-radius: 5px;
     padding: 6px 10px;
@@ -96,6 +96,7 @@ table {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   padding: 30px;
   border-radius: 6px;
+  background: #fff;
 }
 .arrow {
   a {
@@ -114,10 +115,20 @@ table {
   text-align: left;
   margin-bottom: 15px;
   color: #c99128;
-  span {
-    font-size: 20px;
-    font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  img {
+    width: 22px;
+    height: auto;
+    display: block;
   }
+}
+.clickBtn {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  margin-top: 10px;
 }
 @media (max-width: 1180px) {
   .select {

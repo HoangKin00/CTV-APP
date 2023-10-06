@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { menu } from "../../routes/route";
 import { PUBLIC_URL } from "../../utils/const";
 import "./side.css";
@@ -9,7 +9,7 @@ const Side = () => {
   const navToggle = () => {
     if (window.innerWidth < 1200) setActive(!active);
   };
-
+  const { pathname } = useLocation();
   return (
     <nav className="nav">
       {active && <div onClick={navToggle} className="nav__bg"></div>}
@@ -21,9 +21,14 @@ const Side = () => {
             className="logoimg"
           />
         </div>
-        <li>
+        <li className="nav__group">
           {menu.map((item) => (
-            <div key={item.name} className="nav__item">
+            <div
+              key={item.name}
+              className={`nav__item ${
+                pathname === item.link ? "menuActive" : ""
+              }`}
+            >
               <Link to={item.link} onClick={navToggle} className="nav__link">
                 <img src={item.icon} alt="" className="nav__icon" />
                 <span>{item.name}</span>

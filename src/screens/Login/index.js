@@ -77,7 +77,7 @@ function Login() {
                     className={errors.password && touched.password && "error"}
                     errorMessage={errors.password}
                   />
-                  <Button info disabled={isSubmitting}>
+                  <Button primary disabled={isSubmitting}>
                     Đăng nhập
                   </Button>
                 </form>

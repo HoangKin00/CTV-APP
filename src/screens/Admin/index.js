@@ -1,16 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Search from "../../components/Input/Search";
-import listStyles from "./List.module.scss";
 
 const Admin = () => {
   return (
-    <div className={listStyles["list"]}>
-      <div className={listStyles["list__button"]}>
-        <Link to={"/them-moi-tai-khoan"}>
-          Thêm mới tài khoản <span>+</span>
-        </Link>
-      </div>
+    <div className="list">
+      <div className="title">Danh sách tài khoản</div>
       <div className="box">
         <div className="filter">
           <Search type="search" placeholder="Tìm kiếm" />
@@ -23,7 +17,7 @@ const Admin = () => {
             </select>
           </div>
         </div>
-        <div className={listStyles["list__detail"]}>
+        <div className="list__detail">
           <table className="table table-bordered">
             <tbody>
               <tr>

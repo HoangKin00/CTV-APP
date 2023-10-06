@@ -1,11 +1,10 @@
 .btn {
-  padding: 10px 15px;
+  padding: 7px 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
-  transition: 0.6s;
-  width: 100%;
+  transition: 0.2s;
   color: #fff;
 }
 .default {
@@ -13,8 +12,9 @@
   background-color: #f6f6f6;
 }
 .primary {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #1d6894;
+  border-color: #1d6894;
+  width: 100%;
 }
 
 .success {
@@ -26,8 +26,12 @@
   }
 }
 .info {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #1d6894;
+  border-color: #1d6894;
+  &:hover {
+    background-color: #c89128;
+    border-color: #c89128;
+  }
 }
 
 .warning {

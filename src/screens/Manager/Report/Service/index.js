@@ -261,8 +261,10 @@ class ReportService extends Component {
     return (
       <div>
         <Bar options={options} data={barChartData} />
-        <button onClick={this.change1}>1 tuần trước</button>
-        <button onClick={this.change2}>1 tháng trước</button>
+        <div className="clickBtn">
+          <button onClick={this.change1}>1 tuần trước</button>
+          <button onClick={this.change2}>1 tháng trước</button>
+        </div>
       </div>
     );
   }

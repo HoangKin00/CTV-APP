@@ -10,13 +10,13 @@
     th {
       border-top: none;
       border-bottom: 1px solid #dee2e6;
+      text-align: left !important;
     }
   }
   &__btn {
     display: flex;
     button {
       margin-left: auto;
-      width: 20%;
     }
   }
   @media (max-width: 767px) {
@@ -33,7 +33,7 @@
       width: 55%;
     }
     &__btn button {
-      width: 60%;
+      width: 100%;
     }
   }
 }

@@ -16,7 +16,7 @@ const AddCustomer = () => {
       </div>
       <div className="box">
         <div className="title">
-          Thêm mới khách hàng <span>+</span>
+          Thêm mới khách hàng <img src={`${PUBLIC_URL}/icons/add.svg`} alt="" />
         </div>
         <div className={addCusStyles["addCus__detail"]}>
           <div className={addCusStyles["addCus__item"]}>

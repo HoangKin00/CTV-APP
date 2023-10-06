@@ -1,17 +1,17 @@
 .reportActivity {
   &__des {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 15px;
   }
   &__btn {
-    width: 10%;
     button {
       border-radius: 5px;
-      padding: 7px;
+      padding: 6px 40px;
       transition: all 0.2s linear;
+      width: 100%;
       &:hover {
-        background-color: #337ab7;
+        background-color: #1d6894;
         border-color: #2e6da4;
         color: #fff;
       }
@@ -27,12 +27,7 @@
     width: 48%;
     margin-bottom: 20px;
     h4 {
-      margin: 0;
-    }
-  }
-  @media (max-width: 1440px) {
-    &__btn {
-      width: 15%;
+      margin: 10px 0 0;
     }
   }
   @media (max-width: 767px) {
@@ -42,8 +37,12 @@
     &__des {
       gap: 10px;
     }
+  }
+  @media (max-width: 320px) {
     &__btn {
-      width: 30%;
+      button {
+        padding: 5px 25px;
+      }
     }
   }
 }

@@ -6,13 +6,13 @@ import { PUBLIC_URL } from "../../../../utils/const";
 const ReportActivityCtv = () => {
   return (
     <div>
+      <div className="arrow">
+        <Link to={"/bao-cao-hoat-dong"}>
+          <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt="" />
+          Quay lại
+        </Link>
+      </div>
       <div className="box">
-        <div className="arrow">
-          <Link to={"/bao-cao-hoat-dong"}>
-            <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt="" />
-            Quay lại
-          </Link>
-        </div>
         <div className="filter">
           <Search type="search" placeholder="Tìm kiếm" />
         </div>

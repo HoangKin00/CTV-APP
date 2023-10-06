@@ -16,20 +16,20 @@ class ReportActivityCustomer extends Component {
         datasets: [
           {
             label: "Số lượng khách hàng",
-            backgroundColor: "rgba(192,75,192, 0.6)",
-            borderColor: "rgba(192,75,192, 1)",
+            backgroundColor: "rgba(91, 155, 213, 0.8)",
+            borderColor: "rgba(91, 155, 213, 1)",
             borderWidth: 1,
-            hoverBackgroundColor: "rgba(192,75,192, 0.8)",
-            hoverBorderColor: "rgba(192,75,192, 1)",
+            hoverBackgroundColor: "rgba(91, 155, 213, 0.9)",
+            hoverBorderColor: "rgba(91, 155, 213, 1)",
             data: [65, 35, 39, 10, 23, 45]
           },
           {
             label: "Số lượng khách hàng thực hiện dịch vụ",
-            backgroundColor: "rgba(255, 204, 255,0.7)",
-            borderColor: "rgba(255, 204, 255,1)",
+            backgroundColor: "rgba(170, 170, 170,0.8)",
+            borderColor: "rgba(170, 170, 170,1)",
             borderWidth: 1,
-            hoverBackgroundColor: "rgba(255, 204, 255,0.9)",
-            hoverBorderColor: "rgba(255, 204, 255,1)",
+            hoverBackgroundColor: "rgba(170, 170, 170,0.9)",
+            hoverBorderColor: "rgba(170, 170, 170,1)",
             data: [30, 20, 25, 5, 10, 15]
           }
         ]
@@ -67,7 +67,7 @@ class ReportActivityCustomer extends Component {
             }
           }}
         />
-        <div>
+        <div className="clickBtn">
           <button
             onClick={() =>
               this.handleButtonClick([
